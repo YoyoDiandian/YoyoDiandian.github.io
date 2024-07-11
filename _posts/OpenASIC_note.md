@@ -5,4 +5,3 @@ categories: [article]
 tag: [ISP, VPU, NPU]
 ---
 
-![markdown](https://mp.weixin.qq.com/s/O5jkaCddgy9WVwVhmr4NXg)
