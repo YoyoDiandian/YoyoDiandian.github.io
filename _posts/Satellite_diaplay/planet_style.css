@@ -1,0 +1,153 @@
+#box-menu {
+    position: relative;
+    height: 530px;
+    width: 300px;
+    background-color: rgba(70, 70, 70, 0.418);
+    color: rgb(232, 232, 232);
+    top: 65px;
+    left: 30px;
+    border-radius: 10px;
+}
+
+#menutitle {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+    color: rgb(232, 232, 232);
+    font-weight: 550;
+}
+
+#title2 {
+    position: relative;
+    top: 25px;
+    left: 20px;
+    font-size: 18px;
+    color: rgb(232, 232, 232);
+    font-weight: 550;
+}
+
+#TLE_Selection {
+    position: relative;
+    top: 15px;
+    left: 18px;
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(15, 15, 15);
+    border: solid 2px rgb(87, 87, 87);
+}
+
+.TLE_Button {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    height: 30px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 620;
+    text-align: center;
+    border-radius: 4px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+    color: rgb(15, 15, 15);
+    border: solid 2px rgb(87, 87, 87);
+}
+
+.TLE_Button:hover {
+    background-color: rgb(58, 58, 58);
+    color: rgb(249, 249, 249);
+    border-color: rgb(249, 249, 249);
+}
+
+.checkbox-container {
+    width: 250px; /* 设置容器的宽度 */
+    height: 265px; /* 设置容器的高度 */
+    overflow-y: auto; /* 启用垂直滚动条 */
+    border: 1px solid #ccc; /* 设置边框样式 */
+    padding: 10px; /* 内边距 */
+    box-sizing: border-box; /* 包括边框和内边距 */
+    position: relative;
+    top: 40px;
+    left: 18px;
+    border-radius: 5px;
+}
+
+.checkbox-container label {
+    display: block; /* 每个复选框占据一行 */
+    margin-bottom: 7px; /* 每个复选框之间的间距 */
+}
+
+#searchBox {
+    position: relative;
+    left: 18px;
+    top: 30px;
+    font-size: 15px;
+    height: 25px;
+    width: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: rgb(232, 232, 232);
+    color: rgb(15, 15, 15);
+    border: solid 2px rgb(87, 87, 87);
+}
+
+#submit_Button {
+    position: absolute;
+    bottom: 10px;
+    left: 65px;
+    height: 30px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 620;
+    text-align: center;
+    border-radius: 4px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+    color: rgb(15, 15, 15);
+    border: solid 2px rgb(87, 87, 87);
+}
+
+#reset_Button {
+    position: absolute;
+    bottom: 10px;
+    right: 65px;
+    height: 30px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 620;
+    text-align: center;
+    border-radius: 4px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+    color: rgb(15, 15, 15);
+    border: solid 2px rgb(87, 87, 87);
+}
+
+#submit_Button:hover {
+    background-color: rgb(58, 58, 58);
+    color: rgb(249, 249, 249);
+    border-color: rgb(249, 249, 249);
+}
+
+#reset_Button:hover {
+    background-color: rgb(58, 58, 58);
+    color: rgb(249, 249, 249);
+    border-color: rgb(249, 249, 249);
+}

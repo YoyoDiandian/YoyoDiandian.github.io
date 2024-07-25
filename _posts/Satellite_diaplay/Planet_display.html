@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8" />
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <!-- yoyo's attempt -->
+    <title>Satellite display</title>
+    <!-- Import js script, can't use `import ...` in script -->
+    <script type="text/javascript" src="../../Build/CesiumUnminified/Cesium.js"></script>
+    <script type="text/javascript" src="../templates/menu-button-function.js"></script>
+    <script type="text/javascript" src="../templates/Plotinus.js"></script>
+    <link rel="stylesheet" href="../../node_modules/xterm/css/xterm.css" />
+    <script type="text/javascript" src="../../node_modules/xterm/lib/xterm.js"></script>
+    <script type="text/javascript" src="../templates/terminal.js"></script>
+    <script type="text/javascript" src="../templates/initSet.js"></script>
+    <script type="text/javascript" src="../templates/xmlRequest.js"></script>
+    <script type="text/javascript" src="generateCheckboxes.js"></script>
+    <!--  -->
+
+    <!---------------- code here ---------------->
+    <link rel="stylesheet" href="planet_style.css">
+    <!------------------------------------------->
+
+  </head>
+  <body
+    class="Loading">
+    <style>
+      @import url(../templates/plotinus-frontend-style.css);
+    </style>
+   
+    <div id="cesiumContainer" class="fullSize"></div>
+    <div id="loadingOverlays">Loading...</div>  
+
+    <!---------------- code here ---------------->
+    <div id="Icon">
+        <div id="Fudanicon">
+          <img src="../image/Fudanlogo.png" >
+        </div>
+        <a href="https://inc.fudan.edu.cn/main.htm" target="_blank">
+          <div id="INCicon">
+            <img title="INC" src="../image/INClogo.png" >
+            <div id="INC">INC Research Centre</div>
+          </div>
+        </a>
+    </div>
+
+    <div id="box-menu">
+        <div id="menutitle">Menu</div>
+        <div class="title">Select Data Type</div>
+        <select id="TLE_Selection">
+            <option value=0>Satellite</option>
+            <option value=1>Ground Station</option>
+            <option value=2>Both</option>
+        </select>
+        <button class="TLE_Button" onclick="ChoseTLE()">Select</button>
+        
+        <div id="title2">Select Satellites and Ground Stations</div>
+        <!-- 生成复选框 -->
+        <div class="container">
+            <input type="text" id="searchBox" class="search-box" placeholder="Search..." onkeyup="filterCheckboxes()">
+            <div class="checkbox-container" id="checkboxContainer"></div>
+        </div>
+
+        <!-- 最后的提交按键 -->
+        <button id="submit_Button" onclick="submit()">Submit</button>
+        <button id="reset_Button" onclick="reset()">Reset</button>
+    </div>
+
+    <!------------------------------------------->
+
+    <script type="text/javascript" src="planet_script.js"></script>
+
+
+  </body>
+</html>
