@@ -1,0 +1,54 @@
+/Apps
+/Build
+/node_modules
+/packages
+/script
+/Source
+/Specs
+/ThirdParty
+/Plotinus
+|__/asserts		# 静态资源图片
+|__/Components     		# 组件生成
+     |__/Basic		# 基础组件(按钮、下拉菜单）
+          |__/button    
+     |__/Toolbar        		# 容器组件（菜单框、卫星log框）
+          |__/Toolbar .js  	# 组件构建
+          |__/.css		# 组件样式
+|__/Pages			# 页面级组件（页面级逻辑实现）
+    |__/Guide
+         |__/guide.js
+         |__/guide,css
+    |__/MutiConstellation 
+|__/Utils			# 工具类（处理czml等）
+|__/Router  		# 页面路由
+|__ /Weights.css 		# 界面样式合
+|__main.js			# 主入口
+
+
+/Apps
+/Build
+/node_modules
+/packages
+/script
+/Source
+/Specs
+/ThirdParty
+/Plotinus
+|__/asserts		# 静态资源图片
+|__/Weights		# 界面样式
+     |__/Guide 
+          |__/.css
+     |__ /Weights.css 		# 界面样式合
+|__/Components     		# 组件生成
+     |__/Basic		# 基础组件
+          |__/button    
+     |__/Toolbar        		# 容器组件
+          |__/Toolbar .js  	# 组件构建
+          |__/.css		# 组件样式
+|__/Pages			# 页面级组件
+    |__/Guide
+         |__/guide.js
+    |__/MutiConstellation 
+|__/Utils			# 工具类
+|__/Router  		# 页面路由
+|__main.js			# 主入口
